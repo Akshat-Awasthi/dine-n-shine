@@ -1,0 +1,454 @@
+{
+    "orders": [
+      {
+        "id": "001",
+        "token": "T1",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "5",
+        "Amount": "200",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Chicken Burger",
+            "quantity": 2,
+            "price": 200,
+            "remarks": "No onions"
+          }
+        ]
+      },
+      {
+        "id": "002",
+        "token": "T2",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "150",
+        "Remaining": "150",
+        "items": [
+          {
+            "name": "Veg Wrap",
+            "quantity": 1,
+            "price": 150,
+            "remarks": "Extra spicy"
+          }
+        ]
+      },
+      {
+        "id": "003",
+        "token": "T3",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "2",
+        "Amount": "300",
+        "Remaining": "300",
+        "items": [
+          {
+            "name": "Margarita Pizza",
+            "quantity": 1,
+            "price": 300,
+            "remarks": "Extra cheese"
+          }
+        ]
+      },
+      {
+        "id": "004",
+        "token": "T4",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "250",
+        "Remaining": "250",
+        "items": [
+          {
+            "name": "Pasta Alfredo",
+            "quantity": 1,
+            "price": 250,
+            "remarks": "No garlic"
+          }
+        ]
+      },
+      {
+        "id": "005",
+        "token": "T5",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "3",
+        "Amount": "120",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Grilled Sandwich",
+            "quantity": 1,
+            "price": 120,
+            "remarks": "Brown bread"
+          }
+        ]
+      },
+      {
+        "id": "006",
+        "token": "T6",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "7",
+        "Amount": "360",
+        "Remaining": "360",
+        "items": [
+          {
+            "name": "Caesar Salad",
+            "quantity": 2,
+            "price": 180,
+            "remarks": "No croutons"
+          }
+        ]
+      },
+      {
+        "id": "007",
+        "token": "T7",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "450",
+        "Remaining": "450",
+        "items": [
+          {
+            "name": "Chicken Shawarma",
+            "quantity": 3,
+            "price": 450,
+            "remarks": "Extra garlic sauce"
+          }
+        ]
+      },
+      {
+        "id": "008",
+        "token": "T8",
+        "status": "Paid",
+        "type": "Take Away",
+        "Amount": "350",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Tandoori Chicken",
+            "quantity": 1,
+            "price": 350,
+            "remarks": "Well done"
+          }
+        ]
+      },
+      {
+        "id": "009",
+        "token": "T9",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "8",
+        "Amount": "400",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Prawn Biryani",
+            "quantity": 1,
+            "price": 400,
+            "remarks": "Extra spicy"
+          }
+        ]
+      },
+      {
+        "id": "010",
+        "token": "T10",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "400",
+        "Remaining": "400",
+        "items": [
+          {
+            "name": "Fish Tacos",
+            "quantity": 2,
+            "price": 200,
+            "remarks": "Add guacamole"
+          }
+        ]
+      },
+      {
+        "id": "011",
+        "token": "T11",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "4",
+        "Amount": "500",
+        "Remaining": "500",
+        "items": [
+          {
+            "name": "BBQ Chicken Pizza",
+            "quantity": 1,
+            "price": 500,
+            "remarks": "Extra BBQ sauce"
+          }
+        ]
+      },
+      {
+        "id": "012",
+        "token": "T12",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "220",
+        "Remaining": "220",
+        "items": [
+          {
+            "name": "Paneer Tikka",
+            "quantity": 1,
+            "price": 220,
+            "remarks": "No onions"
+          }
+        ]
+      },
+      {
+        "id": "013",
+        "token": "T13",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "6",
+        "Amount": "350",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Butter Chicken",
+            "quantity": 1,
+            "price": 350,
+            "remarks": "Mild spice"
+          }
+        ]
+      },
+      {
+        "id": "014",
+        "token": "T14",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "1",
+        "Amount": "600",
+        "Remaining": "600",
+        "items": [
+          {
+            "name": "Lamb Chops",
+            "quantity": 2,
+            "price": 600,
+            "remarks": "Medium rare"
+          }
+        ]
+      },
+      {
+        "id": "015",
+        "token": "T15",
+        "status": "Paid",
+        "type": "Take Away",
+        "Amount": "350",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Grilled Fish",
+            "quantity": 1,
+            "price": 350,
+            "remarks": "Lemon butter sauce"
+          }
+        ]
+      },
+      {
+        "id": "016",
+        "token": "T16",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "250",
+        "Remaining": "250",
+        "items": [
+          {
+            "name": "Beef Burger",
+            "quantity": 1,
+            "price": 250,
+            "remarks": "Medium well"
+          }
+        ]
+      },
+      {
+        "id": "017",
+        "token": "T17",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "9",
+        "Amount": "700",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Steak",
+            "quantity": 1,
+            "price": 700,
+            "remarks": "Rare"
+          }
+        ]
+      },
+      {
+        "id": "018",
+        "token": "T18",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "10",
+        "Amount": "200",
+        "Remaining": "200",
+        "items": [
+          {
+            "name": "Veggie Burger",
+            "quantity": 1,
+            "price": 200,
+            "remarks": "Extra pickles"
+          }
+        ]
+      },
+      {
+        "id": "019",
+        "token": "T19",
+        "status": "Paid",
+        "type": "Take Away",
+        "Amount": "450",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Shrimp Scampi",
+            "quantity": 1,
+            "price": 450,
+            "remarks": "Extra garlic"
+          }
+        ]
+      },
+      {
+        "id": "020",
+        "token": "T20",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "360",
+        "Remaining": "360",
+        "items": [
+          {
+            "name": "Tuna Sandwich",
+            "quantity": 2,
+            "price": 180,
+            "remarks": "Whole wheat bread"
+          }
+        ]
+      },
+      {
+        "id": "021",
+        "token": "T21",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "12",
+        "Amount": "80",
+        "Remaining": "80",
+        "items": [
+          {
+            "name": "French Fries",
+            "quantity": 1,
+            "price": 80,
+            "remarks": "No salt"
+          }
+        ]
+      },
+      {
+        "id": "022",
+        "token": "T22",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "200",
+        "Remaining": "200",
+        "items": [
+          {
+            "name": "Fried Rice",
+            "quantity": 1,
+            "price": 200,
+            "remarks": "No soy sauce"
+          }
+        ]
+      },
+      {
+        "id": "023",
+        "token": "T23",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "11",
+        "Amount": "300",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Cauliflower Steak",
+            "quantity": 1,
+            "price": 300,
+            "remarks": "Spicy"
+          }
+        ]
+      },
+      {
+        "id": "024",
+        "token": "T24",
+        "status": "Paid",
+        "type": "Dine In",
+        "table": "13",
+        "Amount": "280",
+        "Remaining": "0",
+        "items": [
+          {
+            "name": "Veggie Pizza",
+            "quantity": 1,
+            "price": 280,
+            "remarks": "No olives"
+          }
+        ]
+      }
+    ],
+    "newOrders": [
+      {
+        "id": "003",
+        "token": "T3",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "2",
+        "Amount": "300",
+        "Remaining": "300",
+        "items": [
+          {
+            "name": "Margarita Pizza",
+            "quantity": 1,
+            "price": 300,
+            "remarks": "Extra cheese"
+          }
+        ]
+      },
+      {
+        "id": "006",
+        "token": "T6",
+        "status": "Not Paid",
+        "type": "Dine In",
+        "table": "7",
+        "Amount": "360",
+        "Remaining": "360",
+        "items": [
+          {
+            "name": "Caesar Salad",
+            "quantity": 2,
+            "price": 180,
+            "remarks": "No croutons"
+          }
+        ]
+      },
+      {
+        "id": "007",
+        "token": "T7",
+        "status": "Not Paid",
+        "type": "Take Away",
+        "Amount": "450",
+        "Remaining": "450",
+        "items": [
+          {
+            "name": "Chicken Shawarma",
+            "quantity": 3,
+            "price": 450,
+            "remarks": "Extra garlic sauce"
+          }
+        ]
+      }
+    ]
+  }
+  
