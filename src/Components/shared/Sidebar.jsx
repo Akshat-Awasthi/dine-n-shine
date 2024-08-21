@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import classNames from 'classnames'
 
 
-const ClassLinks = 'flex item-center gap-2 p-3 font-light px-3 hover:bg-gradient-to-r hover:from-purple-800 hover:to-purple-100 hover:no-underline active:bg-neutral-600 rounded-md text-base'
+const ClassLinks = 'flex item-center gap-2 p-3 font-light px-3 hover:bg-gradient-to-r hover:from-purple-800 hover:to-purple-100 hover:no-underline hover:text-white active:bg-neutral-600 rounded-md text-base'
 function SideLink({item}){
   const {pathname} = useLocation();
   return(

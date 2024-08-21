@@ -2,7 +2,8 @@
 import React from 'react';
 import { MdSpaceDashboard } from "react-icons/md"; 
 import { FaClipboardList, FaConciergeBell, FaUtensils } from "react-icons/fa";
-import { GiCook, GiTable } from "react-icons/gi"; 
+import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { LiaTableSolid } from "react-icons/lia";
 import { IoMdPeople } from "react-icons/io"; 
 import { RiArchiveDrawerLine } from "react-icons/ri"; 
 import { AiOutlineBarChart, AiOutlineSetting } from "react-icons/ai"; 
@@ -34,13 +35,13 @@ export const Sidebar_Links  = [
         key: 'menu',
         label: 'Menu',
         path: '/menu',
-        icon: <GiCook/>
+        icon: <MdOutlineRestaurantMenu/>
     },
     {
         key: 'table',
         label: 'Table',
         path: '/table',
-        icon: <GiTable/>
+        icon: <LiaTableSolid/>
     },
     {
         key: 'employees',
