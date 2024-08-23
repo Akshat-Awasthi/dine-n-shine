@@ -7,8 +7,6 @@ import { IoPrintSharp } from "react-icons/io5";
 const SideBar = ({ isVisible, orderDetails, closeSidebar}) => {
   if (!isVisible) return null;
 
-  const {items } = orderDetails;
-
   return (
     <div className="fixed top-0 right-0 w-1/3 h-full bg-gray-100 shadow-lg p-4">
         <div className='flex flex-row'>
@@ -30,7 +28,7 @@ const SideBar = ({ isVisible, orderDetails, closeSidebar}) => {
       {items && (
         <div>
           <h3 className='text-sm text-gray-400 mt-4'>Items</h3>
-          {items.map((item) => (
+          {orderDetails.map((item) => (
             <div key={item.id} className='flex flex-row'>
                 <img src="https://img.freepik.com/free-vector/colorful-round-tasty-pizza_1284-10219.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid" alt="" className='h-20 w-20 rounded-full m-3 ' />
               <div>
@@ -43,9 +41,8 @@ const SideBar = ({ isVisible, orderDetails, closeSidebar}) => {
               </div>
               <p className='mt-16 ml-44 text-bold'>₹{item.price}</p>
               
-              {item.additionalOptions && (
-                <p>+ {item.additionalOptions.join(', ')}</p>
-              )}
+             
+          
             </div>
           ))}
         </div>
