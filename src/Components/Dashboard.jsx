@@ -34,7 +34,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/orders');
+                const response = await axios.get('https://dine-n-shine-backend.onrender.com/orders');
                 console.log('all data:', response.data);
                 console.log('Orders data:', response.data.orders);
                 setOrderData(response.data);
