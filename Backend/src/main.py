@@ -21,7 +21,7 @@ order_collection = database["orders"]
 
 origins = [
     "http://localhost:5173",
-    "https://yourfrontenddomain.com",
+    "https://dine-n-shine.vercel.app/",
 ]
 
 app.add_middleware(
@@ -83,3 +83,7 @@ async def update_orders(order: Order, _id: str):
         return order_serializer(updated_result)
     else:
         raise HTTPException(status_code=404, detail="Order not found or no fields to update")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
