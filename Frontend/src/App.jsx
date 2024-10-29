@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Components/shared/Layout';
 import Dashboard from './Components/Dashboard';
+import Orders from './Components/Orders';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<Dashboard/>} />
+          <Route path='/orders' element={<Orders/>}/>
         </Route>
         </Routes>
 

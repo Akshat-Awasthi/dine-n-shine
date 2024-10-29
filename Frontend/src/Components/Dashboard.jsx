@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import orderData from './lib/orders.json';
+import React, { useEffect, useState } from 'react';
 import { IoMdPeople } from "react-icons/io"; 
 import { FaUserCircle } from 'react-icons/fa';
 import { IoPrintSharp } from "react-icons/io5";
 import { BsFillBoxSeamFill } from "react-icons/bs";
+import axios from 'axios';
 import SideBar from './SideBar';
 
 const Dashboard = () => {
     const [headerFocus, setHeaderFocus] = useState(1);
     const [selectedOrder, setSelectedOrder] = useState(null);
     const [isSidebarVisible, setSidebarVisible] = useState(false);
-
+    const [orderData,setOrderData] = useState();
     const dashboardHeader = [
         { id: 1, type: 'All' },
         { id: 2, type: 'New Orders' },
@@ -28,6 +28,25 @@ const Dashboard = () => {
         setSelectedOrder(null);
     };
 
+
+    
+
+    useEffect(() => {
+        const fetchOrders = async () => {
+            try {
+                const response = await axios.get('http://localhost:8000/orders');
+                console.log('all data:', response.data);
+                console.log('Orders data:', response.data.orders);
+                setOrderData(response.data);
+            } catch (error) {
+                console.error('Error fetching orders:', error.response ? error.response.data : error.message);
+            }
+        };
+        fetchOrders();
+    }, []);
+    
+
+
     return (
         <div className='bg-slate-100 min-h-screen'>
             <h1 className='text-2xl m-5'>Dashboard</h1>
@@ -43,8 +62,8 @@ const Dashboard = () => {
                 ))}
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-full w-[1200px] mt-5 ml-2'>
-                {/* ALL ORDERS */}
-                {headerFocus === 1 && orderData.orders.map((item) => (
+                {/* All Orders */}
+                {headerFocus === 1 && orderData?.orders.map((item) => (
                     <div
                         key={item.id}
                         className="w-11/12 h-max p-4 mt-2 bg-white rounded-md shadow"
@@ -123,7 +142,7 @@ const Dashboard = () => {
                     </div>
                 ))}
                 {/* New Orders */}
-                {headerFocus === 2 && orderData.newOrders.map((item) => (
+                {headerFocus === 2 && orderData?.newOrders.map((item) => (
                     <div
                         key={item.id}
                         className="w-11/12 h-max p-4 mt-2 bg-white rounded-md shadow"
@@ -201,8 +220,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 ))}
-
-                {/* Sidebar */}
+                
                 <SideBar
                     isVisible={isSidebarVisible}
                     orderDetails={selectedOrder}

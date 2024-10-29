@@ -1,0 +1,110 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment directories
+.env/
+.venv/
+env/
+venv/
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Django stuff (if using Django)
+*.log
+local_settings.py
+media/
+staticfiles/
+db.sqlite3
+
+# Flask stuff (if using Flask)
+instance/
+.webassets-cache
+
+# Pytest
+.pytest_cache/
+.cache
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS files
+.DS_Store
+
+# Test coverage results
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.nox/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Profiling data
+*.prof
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# celery beat schedule file
+celerybeat-schedule
