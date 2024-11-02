@@ -20,15 +20,15 @@ export const Sidebar_Links  = [
         icon: <MdSpaceDashboard/>
     },
     {
-        key: 'orders',
-        label: 'Orders',
-        path: '/orders',
+        key: 'search',
+        label: 'Search',
+        path: '/search',
         icon: <FaClipboardList/>
     },
     {
-        key: 'createorders',
-        label: 'Create Orders',
-        path: '/createorders',
+        key: 'mangaeorders',
+        label: 'Manage Orders',
+        path: '/manage',
         icon: <FaConciergeBell/>
     },
     {

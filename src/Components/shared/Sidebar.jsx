@@ -25,16 +25,16 @@ function SideBottom({item}){
 }
 const Sidebar = () => {
   return (
-    <div className='flex flex-col bg-white min-w-64 p-3 text-black'>
-      <div className='flex flex-row m-1 ml-3'>
-          <span className='text-2xl'>Street-Dine</span>
+    <div className='flex flex-col bg-white min-w-64 min-h-screen border-r-[1px] text-black'>
+      <div className='flex flex-row p-1 pl-3 h-16 border-b w-full'>
+          <span className='text-2xl p-3 pb-6'>Dine-n-Shine</span>
         </div>
-      <div className='flex-1 flex flex-col py-5 gap-0.5'>
+      <div className='flex-1 flex flex-col py-5 gap-0.5 p-3'>
         {Sidebar_Links.map((item)=>(
           <SideLink key={item.key} item={item}/>
         ))}
       </div>
-      <div className='flex flex-col py-3 pt-2 border-t border-gray-500 '>
+      <div className='flex flex-col py-3 pt-2 mx-3 border-t border-gray-500 '>
         {Sidebar_Logout.map((item)=>(
           <SideBottom key={item.key} item={item}/>
         ))}
