@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='h-16 bg-white w-[1200px] border-b-[1px]'>
+      <div className='h-16 bg-white w-[1180px] border-b-[1px]'>
         <div className='pt-4'>
             <IoMdMenu onClick={() => setOpen(!open)} size={28} className='mx-5 md:hidden' />
         </div>
@@ -54,7 +54,7 @@ const Header = () => {
 
       <div
         className={classNames(
-          'absolute top-0 left-0 flex flex-col bg-white min-w-64 min-h-screen border-r-[1px] text-black transform transition-transform duration-300',
+          'fixed z-50 top-0 left-0 flex flex-col bg-white min-w-64 min-h-screen border-r-[1px] text-black transform transition-transform duration-300',
           open ? 'translate-x-0' : '-translate-x-full'
         )}
       >

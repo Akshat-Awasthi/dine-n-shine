@@ -6,6 +6,8 @@ import Layout from './Components/shared/Layout';
 import Dashboard from './Components/Dashboard';
 import ManageOrders from './Components/ManageOrders';
 import SearchOrder from './Components/SearchOrder';
+import Menu from './Components/Menu';
+import ServiceDetail from './Components/ServiceDetails';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
           <Route index element={<Dashboard />} />
           <Route path="/manage" element={<ManageOrders />} />
           <Route path="/search" element={<SearchOrder />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/services/:id" element={<ServiceDetail/>} />
         </Route>
       </Routes>
       <ToastContainer /> 
