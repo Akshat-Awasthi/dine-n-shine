@@ -10,6 +10,34 @@ import Menu from './Components/Menu';
 import ServiceDetail from './Components/ServiceDetails';
 
 const App = () => {
+
+  React.useLayoutEffect(() => {
+    if (!document.getElementById("tailortalk-widget-script")) {
+      const script = document.createElement("script");
+      script.id = "tailortalk-widget-script";
+      script.src = "https://plugins.tailortalk.ai/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+  
+      script.onload = () => {
+        window.TailorTalk && window.TailorTalk.init({
+          agentId: "test_QC_hello",
+          agentName: "My Agent",
+          position: {
+            "bottom": "20px",
+            "right": "20px"
+  },
+          theme: "light",
+        });
+      };
+    }
+  
+    return () => {
+      const container = document.querySelector(".tt-widget-container");
+      if (container) container.remove();
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>
