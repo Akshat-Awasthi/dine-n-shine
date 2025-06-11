@@ -22,7 +22,7 @@ const App = () => {
       script.onload = () => {
         window.TailorTalk && window.TailorTalk.init({
           agentId: "test_QC_hello",
-          agentName: "My Agent",
+          widgetName: "My Agent",
           position: {
             "bottom": "20px",
             "right": "20px"
